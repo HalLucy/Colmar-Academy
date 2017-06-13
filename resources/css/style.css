@@ -1,0 +1,199 @@
+html{
+  font-family: Helvetica;
+  background-color: lightgray;
+}
+
+.header{
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  height: 64px;
+  padding-left: 24px;
+}
+
+.header div{
+  display: inherit;
+  align-items: center;
+}
+
+
+#academy{
+  color: lightgray;
+}
+
+#links a{
+  color: gray;
+  padding: 0 16px;
+}
+
+
+.main{
+  width = 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#section1{
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.large_panel{
+  padding: 32px 24px;
+  width: 60%;
+  flex-shrink: 0;
+}
+
+.large_panel img{
+  width: 100%;
+}
+
+.large_panel video{
+  width: 100%;
+}
+
+.large_panel h2{
+  margin-bottom: 24px;
+}
+
+#learn_something_new {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+#start_here{
+  margin-top: 40px;
+  text-align: center;
+  padding: 8px;
+  width: 100%;
+  color: white;
+  background-color: gray;
+}
+
+
+#section2{
+ width: 100%;
+ background-color: white;
+ background-size: cover;
+ display: inline-flex;
+ align-items: top;
+}
+
+
+#section2_right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.small_image{
+  padding: 16px;
+  width: 35%;
+  flex-shrink: 0;
+}
+
+.small_image img{
+  width: 100%;
+}
+
+.small_panel{
+  width: 423px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+
+.small_panel h3{
+  margin: 8px 0;
+}
+
+.small_panel p{
+  margin: 8px 0;
+}
+
+#orientation{
+  padding-top: 16px;
+}
+
+#orientation .small_image{
+  content: url("images/information-orientation.jpg");
+}
+
+#campus .small_image{
+  content: url("images/information-campus.jpg");
+}
+
+#guest_lecture .small_image{
+  content: url("images/information-guest-lecture.jpg");
+}
+
+
+
+
+#start_learning{
+  padding-top: 32px;
+}
+
+.row{
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.medium_image{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 16px 32px;
+}
+
+.medium_image img{
+  width: 100%;
+}
+
+.medium_image div{
+  padding: 16px 16px 24px 16px;
+}
+
+#thesis{
+ width: 100%;
+ background-color: white;
+ background-size: cover;
+ display: inline-flex;
+ align-items: top;
+}
+
+#thesis_exhibit{
+  width: 100%;
+  text-align: center;
+  padding: 32px 0 0 0;
+  background-color: white;
+}
+
+
+#thesis_right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#fisma{
+  padding-top: 16px;
+}
+
+#fisma .small_image{
+  content: url("images/thesis-fisma.jpg");
+}
+
+#now_and_then .small_image{
+  content: url("images/thesis-now-and-then.jpg");
+}
