@@ -1,45 +1,60 @@
+/* general style elements */
+
 html{
   font-family: Helvetica;
-  background-color: lightgray;
+  background-color: gray;
+  background-image: url("images/png-textures/strange-bullseyes.png");
+  background-repeat: repeat;
+
 }
 
-.header{
-  display: inline-flex;
-  justify-content: space-between;
-  background-color: white;
-  width: 100%;
-  height: 64px;
-  padding-left: 24px;
-}
-
-.header div{
-  display: inherit;
-  align-items: center;
-}
-
-
-#academy{
-  color: lightgray;
-}
-
-#links a{
-  color: gray;
-  padding: 0 16px;
-}
-
-
-.main{
+.page{
   width = 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+h1{
+  font-size: 3.5rem;
+  line-height: 150%;
+  font-weight: bold;
+}
 
-#section1{
+h2{
+  font-size: 2.5rem;
+  line-height: 100%;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 1.5rem;
+  line-height: 100%;
+  font-weight: bold;
+}
+
+
+p {
+  font-size: 14px;
+  line-height: 200%;
+}
+
+.mainpanel {
   width: 100%;
   display: inline-flex;
-  align-items: center;
+}
+
+.rightcolumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.rightcolumn div:first-of-type{
+  padding-top: 16px;
+}
+
+.rightcolumn a {
+  color: lightblue;
 }
 
 .large_panel{
@@ -48,152 +63,544 @@ html{
   flex-shrink: 0;
 }
 
-.large_panel img{
-  width: 100%;
-}
-
 .large_panel video{
   width: 100%;
 }
 
-.large_panel h2{
-  margin-bottom: 24px;
+.medium_panels_container {
+  display: inline-flex;
 }
 
-#learn_something_new {
-  padding-left: 16px;
+.medium_panels{
+  margin: 16px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 996px;
+  flex-shrink: 1;
+}
+
+.medium_panel{
+  width: 300px;
+  height: auto;
+  background-color: white;
+  margin: 16px;
+}
+
+.medium_panel .panel_text {
+  padding: 16px 16px 24px 16px;
+}
+
+.small_panel {
+  width: 423px;
+  display: inline-flex;
+  align-items: center;
+  background-color: gray;
+  background-image: url("images/png-textures/slideshow-frame.png");
+  background-size: cover;
+}
+
+.small_panel h3 {
+  margin: 8px 0;
+}
+
+.small_panel p {
+  margin: 8px 0;
+}
+
+.small_image {
+  padding: 16px;
+    width: 148px;
+}
+
+.pictureframe {
+  content: url("images/png-textures/featured-image.png");
+}
+
+/* interactive elements */
+
+.rightcolumn a:hover {
+  color: blue;
+}
+
+.header a:hover {
+  background-color: lightblue;
+  padding: 0;
+  border: 8px solid lightblue;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+/* header */
+
+.header{
+  position: fixed;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  height: 64px;
+  top: 0;
+  z-index: 15;
+}
+
+.header div{
+  display: inherit;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 8px;
+}
+
+.links a{
+  color: gray;
+  padding: 0 8px;
+  display: inline-flex;
+}
+
+.links div{
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  display: inline-flex;
+  align-content: center;
+}
+
+#Colmar {
+  color: black;
+  font-size: 1rem;
+}
+
+#Academy {
+  color: lightgray;
+  font-size: 1rem;
+}
+
+#Spacer {
+  height: 64px;
+  width: 100%;
+}
+
+/* main panel 1 */
+
+#MainPanel_1 {
+  align-items: center;
+}
+
+#Banner {
+  content: url("images/banner.jpg");
+}
+
+#LearnSomethingNew {
   display: flex;
   flex-direction: column;
+  height: auto;
+  padding: 12px 24px 12px 16px;
+  margin-right: 24px;
+  background-image: url("images/my-additions/cloudy2.jpg");
+  background-size: cover;
 }
 
-#start_here{
+#LearnSomethingNew h1{
+  margin-top: 52px;
+  margin-bottom: 16px;
+}
+
+#LearnSomethingNew h3{
+  line-height: 150%;
+}
+
+#StartHere {
   margin-top: 40px;
+  margin-bottom: 40px;
   text-align: center;
   padding: 8px;
-  width: 100%;
+  width: calc(100% - 40px);
   color: white;
   background-color: gray;
 }
 
 
-#section2{
- width: 100%;
+/* main panel 2 */
+
+#MainPanel_2{
  background-color: white;
  background-size: cover;
- display: inline-flex;
  align-items: top;
 }
 
-
-#section2_right{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+#MainPanel_2 h2{
+  margin: 32px 0 24px 0;
 }
 
-.small_image{
-  padding: 16px;
-  width: 35%;
-  flex-shrink: 0;
-}
-
-.small_image img{
+#InformationMain {
+  content: url("images/information-main.jpg");
   width: 100%;
-}
+  }
 
-.small_panel{
-  width: 423px;
-  display: inline-flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: center;
-  background-color: white;
-}
-
-.small_panel h3{
-  margin: 8px 0;
-}
-
-.small_panel p{
-  margin: 8px 0;
-}
-
-#orientation{
-  padding-top: 16px;
-}
-
-#orientation .small_image{
+#Orientation .small_image{
   content: url("images/information-orientation.jpg");
 }
 
-#campus .small_image{
+#Campus .small_image{
   content: url("images/information-campus.jpg");
 }
 
-#guest_lecture .small_image{
+#GuestLecture .small_image {
   content: url("images/information-guest-lecture.jpg");
 }
 
 
+/* Start learning */
 
-
-#start_learning{
-  padding-top: 32px;
+#StartLearning h2 {
+  margin-top: 32px;
 }
 
-.row{
-  margin-bottom: 32px;
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-}
-
-.medium_image{
-  width: 100%;
-  background-color: white;
+#StartLearning {
   display: flex;
   flex-direction: column;
-  margin: 16px 32px;
+  align-items: center;
 }
 
-.medium_image img{
+#Software {
+  content: url("images/course-software.jpg");
   width: 100%;
 }
 
-.medium_image div{
-  padding: 16px 16px 24px 16px;
-}
-
-#thesis{
- width: 100%;
- background-color: white;
- background-size: cover;
- display: inline-flex;
- align-items: top;
-}
-
-#thesis_exhibit{
+#ComputerArt {
+  content: url("images/course-computer-art.jpg");
   width: 100%;
+}
+
+#Design {
+  content: url("images/course-design.jpg");
+  width: 100%;
+}
+
+#Data {
+  content: url("images/course-data.jpg");
+  width: 100%;
+}
+
+#Business {
+  content: url("images/course-business.jpg");
+  width: 100%;
+}
+
+#Marketing {
+  content: url("images/course-marketing.jpg");
+  width: 100%;
+}
+
+
+/* Thesis Exhibit */
+
+
+#ThesisExhibits {
+  background-color: white;
+  background-size: cover;
+}
+
+#ThesisExhibits .large_panel{
+  padding-right: 16px;
+}
+
+#ThesisExhibits h2{
   text-align: center;
-  padding: 32px 0 0 0;
-  background-color: white;
+  margin-top: 32px;
 }
 
-
-#thesis_right{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+#ThesisExhibits h3{
+  margin: 24px 0;
 }
 
-#fisma{
-  padding-top: 16px;
-}
-
-#fisma .small_image{
+#Fisma .small_image {
   content: url("images/thesis-fisma.jpg");
 }
 
-#now_and_then .small_image{
+#NowAndThen .small_image {
   content: url("images/thesis-now-and-then.jpg");
+}
+
+
+/* footer */
+
+.footer{
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  height: 64px;
+}
+
+.footer div{
+  display: inherit;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 8px;
+}
+
+
+/* resposnive design for smaller displays */
+
+
+@media only screen and (max-width: 1200px) and (min-width: 800px){
+
+  #LearnSomethingNew {
+    width: 374px;
+    padding-left: 40px;
+    height: auto;
+    position: absolute;
+    right: 40px;
+    background-color: lightgray;
+    background-size: cover;
+    z-index: 5;
+  }
+
+  #MainPanel_1 .large_panel {
+    width: 712px;
+  }
+
+
+  .small_panel {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .small_panel p{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .header div{
+    margin-right: 0;
+  }
+
+  .links a{
+    margin: 0 24px;
+  }
+
+  #Colmar {
+    display: none;
+  }
+
+  #Academy {
+    display: none;
+  }
+
+  .links .text{
+    color: white;
+  }
+
+  #OnCampus .icon{
+    content: url("images/ic-on-campus.svg");
+  }
+
+  #Online .icon{
+    content: url("images/ic-online.svg");
+  }
+
+  #ForCompanies {
+    display: none;
+  }
+
+  #SignIn .icon{
+    content: url("images/ic-login.svg");
+  }
+
+  #SpacerMobil {
+    height: 180px;
+    width: 100%;
+  }
+
+  .mainpanel {
+    flex-direction: column;
+  }
+
+  .rightcolumn {
+    padding-bottom: 32px;
+  }
+
+  .small_panel{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16px;
+  }
+
+  .small_panel h3{
+    margin: 0 32px;
+  }
+
+  .small_panel p{
+    display: block;
+    padding-left: 32px;
+    margin: 0 0;
+  }
+
+  .small_panel a{
+    padding-left: 32px;
+  }
+
+  .small_panel h3{
+    margin: 0 0 8px 32px;
+  }
+
+  .small_image{
+    width: calc(100% - 32px);
+    padding-bottom: 8px;
+  }
+
+  .rightcolumn div{
+    padding-top: 16px;
+  }
+
+  .rightcolumn div:first-of-type{
+    padding-top: 0px;
+  }
+
+  #MainPanel_1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #MainPanel_1 .large_panel {
+    display: none;
+  }
+
+  #MainPanel_2 .large_panel {
+    display: none;
+  }
+
+  #Banner {
+    display: none;
+  }
+
+  #LearnSomethingNew {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  #LearnSomethingNew h1{
+    width: calc(100% - 32px);
+    margin: 32px 16px;
+  }
+
+  #LearnSomethingNew h3{
+    margin: 0 16px;
+  }
+
+  #StartHere {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    margin: 24px 16px 32px 16px;
+    text-align: center;
+    width: calc(100% - 48px);
+    color: white;
+    background-color: gray;
+  }
+
+  #Orientation .small_image {
+    content: url("images/information-orientation-mobile.jpg");
+  }
+
+  #Campus .small_image {
+    content: url("images/information-campus-mobile.jpg");
+  }
+
+  #GuestLecture .small_image {
+    content: url("images/information-guest-lecture-mobile.jpg");
+  }
+
+  .medium_panels_container {
+    width: 100%;
+  }
+
+  .medium_panels{
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .medium_panel {
+    margin: 0 16px 8px 16px;
+    width: 100%;
+  }
+
+  .medium_panel p{
+    display: none;
+  }
+
+  .medium_panel .panel_text{
+    width: auto;
+    padding: 16px 16px;
+    background-color: lightgray;
+  }
+
+  .medium_panel .picture {
+    display: none;
+  }
+
+  .medium_panel h3{
+    margin: 0;
+  }
+
+
+  #StartLearning h2{
+    margin: 32px 16px 8px 16px;
+  }
+
+
+  #StartLearning {
+    background-color: white;
+    width: 100%;
+  }
+
+  #ThesisExhibits {
+      display: flex;
+      flex-direction: column;
+  }
+
+
+  #ThesisExhibits .large_panel {
+    padding: 0 0 24px 0;
+      width: 100%;
+  }
+
+  #ThesisExhibits .rightcolumn {
+    display: none;
+  }
+
+  #ThesisExhibits h2{
+      margin-bottom: 24px;
+  }
+
+  #ThesisExhibits h3{
+    display: none;
+  }
+
+  #ThesisExhibits p {
+    display: none;
+  }
+
+  #ThesisHeading {
+    margin: 0;
+    padding: 32px 16px;
+  }
+
+  .footer .links{
+    display: none;
+  }
+
+
 }
