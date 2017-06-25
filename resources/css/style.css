@@ -777,14 +777,21 @@ footer div{
 
 /* "coming soon" page */
 
-#Home {
+#ComingSoon {
+  margin-bottom: 40px;
+  background-color: rgba(255,255,255,0.6);
+  background-size: cover;
+}
+
+#HomeButton {
   width: 30%;
   opacity: 0.8;
   content: url("images/home.svg")
 }
 
-#Home:hover{
+#HomeButton:hover{
   opacity: 1;
+  transition: opacity 200ms ease-in-out;
 }
 
 #Spacer1{
