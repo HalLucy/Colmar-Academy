@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
   <head>
     <title>Colmar Academy</title>
+    <meta charset="utf-8"/>
     <link rel="icon" href="./resources/css/images/favicon.ico" type="image/x-icon">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
@@ -12,86 +13,83 @@
 
   <body>
 
-    <div class = "page">
+    <div role = "presentation" class = "page">
 
       <!-- header -->
 
       <header>
         <nav>
-          <a id = "Logo" href = "index.html">
-            <span class = "icon">
+          <a aria-label = "home" id = "Logo" href = "index.html">
+            <span role = "presentation" class = "icon">
             </span>
-            <span>
-              <p id="Colmar"> COLMAR </p> <p id="Academy"> ACADEMY </p>
+            <span role = "presentation">
+              <span role = "presentation" id="Colmar"> COLMAR </span> <span role = "presentation" id="Academy"> ACADEMY </span>
             </span>
-         </a>
+          </a>
 
-         <div class = "links">
+          <div role = "presentation" class = "links">
 
-            <a id = "OnCampus" href = "coming_soon.html">
-              <span class = "text">
+            <a aria-label = "On campus" id = "OnCampus" href = "coming_soon.html">
+              <span role = "presentation" class = "text">
                 On Campus
               </span>
-              <span class = "icon">
+              <span role = "presentation" class = "icon">
               </span>
             </a>
 
-            <a id = "Online" href = "coming_soon.html">
-              <span class = "text">
+            <a aria-label = "Online" id = "Online" href = "coming_soon.html">
+              <span role = "presentation" class = "text">
                 Online
               </span>
-              <span class = "icon">
+              <span role = "presentation" class = "icon">
               </span>
             </a>
 
-            <a id = "ForCompanies" href = "coming_soon.html">
-              <span class = "text">
+            <a aria-label = "For companies" id = "ForCompanies" href = "coming_soon.html">
+              <span role = "presentation" class = "text">
                 For Companies
               </span>
             </a>
 
-            <a id = "SignIn" href = "coming_soon.html">
-              <span class = "text">
+            <a aria-label = "Sign in" id = "SignIn" href = "coming_soon.html">
+              <span role = "presentation" class = "text">
                 Sign In
               </span>
-              <span class = "icon">
+              <span role = "presentation" class = "icon">
               </span>
             </a>
 
-         </div>
-      </nav>
-
+          </div>
+        </nav>
       </header>
 
-      <div id = "Spacer">
+      <div role = "presentation" id = "Spacer">
       </div>
 
       <!-- Main panel 1 -->
 
 
-      <div id = "MainPanel_1" class = "mainpanel">
+      <div role = "presentation" id = "MainPanel_1" class = "mainpanel">
 
-        <div id = "Banner" class = "large_panel_picture">
-        </div>
+        <img alt = "Image of young women studying" id = "Banner" class = "large_panel_picture" src = "./resources/css/images/icon-image.png">
 
-        <div id = "LearnSomethingNew">
-          <div id = "SpacerMobile">
+        <div role = "presentation" id = "LearnSomethingNew">
+          <div role = "presentation" id = "SpacerMobile">
           </div>
           <h1> Learn something <br /> new everyday </h1>
           <h3> Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. </h3>
-          <h3 id = "StartHere">
-            <a href = #StartLearning> Start here </a>
-          </h3>
+          <a role = "button" aria-label = "Start here" id = "StartHere" href = #StartLearning>
+            <h3 role = "presentation"> Start here </h3>
+          </a>
         </div>
       </div>
 
       <!-- Main panel 2 -->
 
-      <div id = "MainPanel_2" class = "mainpanel">
+      <div role = "presentation" id = "MainPanel_2" class = "mainpanel">
 
-          <div class = "large_panel">
-            <div id = "InformationMain" class = "large_panel_picture">
-            </div>
+          <div role = "presentation" class = "large_panel">
+            <img alt = "Image of a man reading a book" id = "InformationMain" class = "large_panel_picture" src = "./resources/css/images/icon-image.png">
             <h2> It doesn't hurt to keep practicing </h2>
             <p id = "Quote">
               "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque.
@@ -102,14 +100,13 @@
             </p>
           </div>
 
-          <div class = "rightcolumn">
+          <div role = "presentation" class = "rightcolumn">
 
-            <div id = "Orientation" class = "small_panel">
-              <div class = "small_image">
-              </div>
+            <div role = "presentation" id = "Orientation" class = "small_panel">
+              <img alt = "Image of people looking for orientation" class = "small_image" src = "./resources/css/images/icon-image.png">
               <div class = "text">
                 <h3>Orientation date</h3>
-                <p> <span> Tue 10/11 &amp Wed 10/12: 8am-3pm </span> <br /><br />
+                <p> <span> Tue 10/11 &amp; Wed 10/12: 8am-3pm </span> <br /><br />
                   <a href = "coming_soon.html" >
                     Read more
                   </a>
@@ -118,8 +115,7 @@
             </div>
 
             <div id = "Campus" class = "small_panel">
-              <div class = "small_image">
-              </div>
+              <img alt = "Image showing an impression from our campus" class = "small_image" src = "./resources/css/images/icon-image.png">
               <div class = "text">
                 <h3>Our campus</h3>
                 <p> <span> Find which campus is close by you </span> <br /><br />
@@ -132,8 +128,7 @@
 
 
             <div id = "GuestLecture" class = "small_panel">
-              <div class = "small_image">
-              </div>
+              <img alt = "Photo of guest lecturer Oliver Sack" class = "small_image" src = "./resources/css/images/icon-image.png">
               <div class = "text">
                 <h3>Our guest lecture</h3>
                 <p> <span> Join a keynote with Oliver Sack about music in medical treatment </span> <br /><br />
@@ -149,16 +144,15 @@
       <!-- Start Learning section -->
 
 
-      <div class = "mainpanel" id = "StartLearning">
+      <div role = "presentation" class = "mainpanel" id = "StartLearning">
 
         <h2> Start learning </h2>
 
-        <div class = "medium_panels_container">
-          <div class = "medium_panels">
+        <div role = "presentation" class = "medium_panels_container">
+          <div role = "presentation" class = "medium_panels">
 
-            <div class = "medium_panel color1">
-              <div id = "Software" class = "picture">
-              </div>
+            <div role = "presentation" class = "medium_panel color1">
+              <img alt = "Image of desktop computers" id = "Software" class = "picture" src = "./resources/css/images/icon-image.png">
               <div class = "panel_text">
                 <h3>Software engineering</h3>
                 <p>
@@ -167,44 +161,41 @@
                   Development, iOT, APIs
                 </p>
               </div>
-              <a class = "overlay" href = "coming_soon.html">
+              <a aria-label = "Software courses" class = "overlay" href = "coming_soon.html">
               </a>
             </div>
 
-            <div class = "medium_panel color3">
-              <div id = "ComputerArt" class = "picture">
-              </div>
+            <div role = "presentation" class = "medium_panel color3">
+              <img alt = "Image of a hand holding a smartphone" id = "ComputerArt" class = "picture" src = "./resources/css/images/icon-image.png">
               <div class = "panel_text">
                 <h3>Computer art</h3>
                 <p>
                   <span class = "courses"> COURSES </span> <br />
-                  Imaging &amp Design, Web Design, <br />
-                  Motion Graphics &amp Visual Effects, <br />
+                  Imaging &amp; Design, Web Design, <br />
+                  Motion Graphics &amp; Visual Effects, <br />
                   Computer Animation
                 </p>
               </div>
-              <a class = "overlay" href = "coming_soon.html">
+              <a aria-label = "Computer art courses" class = "overlay" href = "coming_soon.html">
               </a>
             </div>
 
-            <div class = "medium_panel color2">
-              <div id = "Design" class = "picture">
-              </div>
+            <div role = "presentation" class = "medium_panel color2">
+              <img alt = "Image of hands holding a camera" id = "Design" class = "picture" src = "./resources/css/images/icon-image.png">
               <div class = "panel_text">
                 <h3>Design</h3>
                 <p>
                   <span class = "courses"> COURSES </span> <br />
-                  User Expeience Design, User <br />
+                  User Experience Design, User <br />
                   Research, Visual Design
                 </p>
               </div>
-              <a class = "overlay" href = "coming_soon.html">
+              <a aria-label = "Design courses" class = "overlay" href = "coming_soon.html">
               </a>
             </div>
 
-            <div class = "medium_panel color3">
-              <div id = "Data" class = "picture">
-              </div>
+            <div role = "presentation" class = "medium_panel color3">
+              <img alt = "Image of a laptop displaying graphs" id = "Data" class = "picture" src = "./resources/css/images/icon-image.png">
               <div class = "panel_text">
                 <h3>Data</h3>
                 <p>
@@ -213,13 +204,12 @@
                   Visualization
                 </p>
               </div>
-              <a class = "overlay" href = "coming_soon.html">
+              <a aria-label = "Data courses" class = "overlay" href = "coming_soon.html">
               </a>
             </div>
 
-            <div class = "medium_panel color2">
-              <div id = "Business" class = "picture">
-              </div>
+            <div role = "presentation" class = "medium_panel color2">
+              <img alt = "Image of chess figures" id = "Business" class = "picture" src = "./resources/css/images/icon-image.png">
               <div class = "panel_text">
                 <h3>Business</h3>
                 <p>
@@ -228,13 +218,12 @@
                   Development, Startup
                 </p>
               </div>
-              <a class = "overlay" href = "coming_soon.html">
+              <a aria-label = "Business courses" class = "overlay" href = "coming_soon.html">
               </a>
             </div>
 
-            <div class = "medium_panel color1">
-              <div id = "Marketing" class = "picture">
-              </div>
+            <div role = "presentation" class = "medium_panel color1">
+              <img alt = "Image of hands using a smartwatch" id = "Marketing" class = "picture" src = "./resources/css/images/icon-image.png">
               <div class = "panel_text">
                 <h3>Marketing</h3>
                 <p>
@@ -243,8 +232,8 @@
                   Mobile Marketing
                 </p>
               </div>
-              <div class = "overlay" href = "coming_soon.html">
-              </div>
+              <a aria-label = "Marketing courses" class = "overlay" href = "coming_soon.html">
+              </a>
             </div>
           </div>
         </div>
@@ -253,11 +242,11 @@
       <!-- Thesis Exhibits section -->
 
       <h2 id = "ThesisHeading"> Thesis Exhibits </h2>
-      <div id = "ThesisExhibits" >
-        <div class = "mainpanel">
-          <div class = "large_panel">
-            <div class = "large_panel_picture">
-              <video controls>
+      <div role = "presentation" id = "ThesisExhibits" >
+        <div role = "presentation" class = "mainpanel">
+          <div role = "presentation" class = "large_panel">
+            <div role = "presentation" class = "large_panel_picture">
+              <video aria-label="video" controls>
                 <source src="./resources/css/videos/thesis.mp4" type="video/mp4">
               </video>
             </div>
@@ -268,18 +257,16 @@
             </p>
           </div>
 
-          <div class = "rightcolumn">
-            <div id = "Fisma" class = "small_panel">
-              <div class = "small_image">
-              </div>
+          <div role = "presentation" class = "rightcolumn">
+            <div role = "presentation" id = "Fisma" class = "small_panel">
+              <img alt = "Image of a hand drawing sketches and a smartphone" class = "small_image" src = "./resources/css/images/icon-image.png">
               <div class = "panel_text">
                 <h3>Fisma: Design and</h3>
                 <p>Designer showcase of new prototype product</p>
               </div>
             </div>
-            <div id = "NowAndThen" class = "small_panel">
-              <div class = "small_image">
-              </div>
+            <div role = "presentation" id = "NowAndThen" class = "small_panel">
+              <img alt = "Image of New York City" class = "small_image" src = "./resources/css/images/icon-image.png">
               <div class = "panel_text">
                 <h3>Now and then</h3>
                 <p>Research study about New York</p>
@@ -293,12 +280,12 @@
   <!-- Social Media -->
 
 
-  <div id = "SocialMedia">
+  <div role = "presentation" id = "SocialMedia">
     <h3>
       Follow us on
-      <a href = "https://www.facebook.com"> <i class = "fa fa-facebook fa-lg"></i> </a>
-      <a href = "https://twitter.com"> <i class = "fa fa-twitter fa-lg"></i> </a>
-      <a href = "https://www.instagram.com"> <i class = "fa fa-instagram fa-lg"></i> </a>
+      <a aria-label = "facebook" href = "https://www.facebook.com"> <i class = "fa fa-facebook fa-lg"></i> </a>
+      <a aria-label = "twitter" href = "https://twitter.com"> <i class = "fa fa-twitter fa-lg"></i> </a>
+      <a aria-label = "instagram" href = "https://www.instagram.com"> <i class = "fa fa-instagram fa-lg"></i> </a>
     </h3>
   </div>
 
@@ -306,16 +293,14 @@
 
   <footer>
     <div>
-      &copy Colmar Academy. All rights reserved
+      &copy; Colmar Academy. All rights reserved
     </div>
-    <div class = "links">
+    <div role = "presentation" class = "links">
       <a href = "coming_soon.html" > Terms </a>
       <a href = "coming_soon.html" > Privacy </a>
     </div>
   </footer>
 
-  </body>
-
   <a href="http://www.freepik.com">Background designed by Creative_hat / Freepik</a>
-
+  </body>
 </html>

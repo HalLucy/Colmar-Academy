@@ -218,6 +218,8 @@ header div{
 }
 
 #StartHere {
+  text-align: center;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -225,20 +227,15 @@ header div{
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 8px;
-  width: 100%;
   background-color: rgba( 47, 131, 231, 1);
   border-radius: 10px;
 }
 
 #StartHere h3 {
   width: 100%;
+  color: white;
 }
 
-#StartHere a {
-  color: white;
-  text-align: center;
-  width: 100%;
-}
 
 #StartHere:hover{
   background-color: rgba(101,169,223,1);
@@ -450,6 +447,10 @@ header div{
 
 /* social media */
 
+#SocialMedia {
+  width: 100%;
+}
+
 #SocialMedia h3 {
   text-align: center;
   margin: 24px 16px 16px 0;
@@ -553,6 +554,7 @@ footer div{
     flex-direction: column;
     align-items: flex-start;
     margin: 0 0 3px 0;
+    padding-top: 0;
   }
 
   .small_panel h3 {
@@ -577,7 +579,7 @@ footer div{
 
   .small_image {
     width: calc(100% - 32px);
-    padding: 0 16px 0 0;
+    padding: 8px 16px 0 0;
     margin-left: 16px;
     margin-right: 16px;
   }
@@ -658,13 +660,19 @@ footer div{
   }
 
   #LearnSomethingNew h3{
-    margin: 0 0 16px 16px;
+    margin: 0 0 0 16px;
   }
 
   #StartHere {
     text-align: center;
-    width: calc(100% - 48px);
-    margin-top: 24px;
+    width: calc(100% - 32px);
+    margin: 24px 16px 32px 16px;
+    padding: 8px 0;
+  }
+
+  #StartHere h3{
+    padding: 8px;
+    margin-bottom: 0;
   }
 
   #Orientation .small_image {
@@ -765,4 +773,28 @@ footer div{
   footer .links{
     display: none;
   }
+}
+
+/* "coming soon" page */
+
+#Home {
+  width: 30%;
+  opacity: 0.8;
+  content: url("images/home.svg")
+}
+
+#Home:hover{
+  opacity: 1;
+}
+
+#Spacer1{
+  height: 180px;
+}
+
+#Spacer2{
+  height: 24px;
+}
+
+#Spacer3{
+  height: 60px;
 }
