@@ -106,19 +106,26 @@ a {
 
 /* header */
 
-.header{
+header{
   width: 100%;
   position: fixed;
-  display: inline-flex;
-  justify-content: space-between;
   background-color: white;
   height: 64px;
   top: 0;
   z-index: 15;
 }
 
-.header div{
-  display: inherit;
+header nav{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+header div{
+  display: flex;
   align-items: center;
   margin-left: 24px;
   margin-right: 8px;
@@ -141,9 +148,26 @@ a {
   background-size: cover;
 }
 
-.logo {
+#Logo {
   display: inline-flex;
-  align-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  margin-left: 16px;
+}
+
+#Logo:hover {
+  background-color: rgba( 47, 131, 231, 1);
+  color: white;
+}
+
+#Logo span{
+  display: inherit;
+}
+
+#Logo .icon {
+  content: url("images/ic-logo-blue.svg");
+  width: 40px;
 }
 
 #Colmar {
@@ -202,9 +226,18 @@ a {
   margin-bottom: 40px;
   padding: 8px;
   width: 100%;
-  color: white;
   background-color: rgba( 47, 131, 231, 1);
   border-radius: 10px;
+}
+
+#StartHere h3 {
+  width: 100%;
+}
+
+#StartHere a {
+  color: white;
+  text-align: center;
+  width: 100%;
 }
 
 #StartHere:hover{
@@ -223,7 +256,7 @@ a {
   margin: 32px 0 24px 0;
 }
 
-#MainPanel_2 .large_panel p {
+.mainpanel .large_panel p {
   font-size: 1.2em;
 }
 
@@ -303,6 +336,10 @@ a {
   height: auto;
   margin: 16px;
   position: relative;
+}
+
+.medium_panel p {
+  font-size: 1.2em;
 }
 
 .overlay {
@@ -411,10 +448,28 @@ a {
   content: url("images/thesis-now-and-then.jpg");
 }
 
+/* social media */
+
+#SocialMedia h3 {
+  text-align: center;
+  margin: 24px 16px 16px 0;
+}
+
+#SocialMedia a{
+  color: rgba( 47, 131, 231, 1);
+  padding: 8px;
+  border-radius: 8px;
+  margin: 0 4px;
+}
+
+#SocialMedia a:hover{
+  color: white;
+  background-color: rgba( 47, 131, 231, 1);
+}
 
 /* footer */
 
-.footer{
+footer{
   display: inline-flex;
   justify-content: space-between;
   background-color: white;
@@ -422,7 +477,7 @@ a {
   height: 64px;
 }
 
-.footer div{
+footer div{
   display: inherit;
   align-items: center;
   margin-left: 24px;
@@ -434,8 +489,24 @@ a {
 
 /* resposnive design for smaller displays */
 
+@media only screen and (max-width: 1200px) and (min-width: 900px){
+
+  .small_panel {
+    width: 300px;
+  }
+
+  .small_panel span{
+    display: none;
+  }
+
+}
 
 @media only screen and (max-width: 1050px) {
+
+  html{
+    background-image: url("images/polygon_background_mobile.gif");
+    background-size: cover;
+  }
 
   #Mainpanel_1 {
     flex-direction: column;
@@ -458,22 +529,15 @@ a {
 
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 900px){
-
-  .small_panel {
-    width: 300px;
-  }
-
-  .small_panel span{
-    display: none;
-  }
-
-}
 
 @media only screen and (max-width: 900px) {
 
   /* general styles */
 
+  html{
+    background-image: url("images/polygon_background_mobile.gif");
+    background-size: cover;
+  }
 
   .mainpanel {
     flex-direction: column;
@@ -541,11 +605,13 @@ a {
   }
 
   #OnCampus .icon{
-    content: url("images/ic-on-campus.svg");
+    content: url("images/ic-on-campus-blue.svg");
+    width: 40px;
   }
 
   #Online .icon{
-    content: url("images/ic-online.svg");
+    content: url("images/ic-online-blue.svg");
+    width: 40px;
   }
 
   #ForCompanies {
@@ -553,9 +619,9 @@ a {
   }
 
   #SignIn .icon{
-    content: url("images/ic-login.svg");
+    content: url("images/ic-login-blue.svg");
+    width: 40px;
   }
-
 
   /* mainpanel 1 */
 
@@ -644,6 +710,7 @@ a {
   }
 
   .medium_panel h3{
+    font-size: 1.7rem;
     margin: 0;
   }
 
@@ -695,7 +762,7 @@ a {
 
 /* footer */
 
-  .footer .links{
+  footer .links{
     display: none;
   }
 }
