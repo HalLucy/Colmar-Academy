@@ -4,6 +4,8 @@
     <title>Colmar Academy</title>
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   </head>
 
   <body>
@@ -15,59 +17,68 @@
           <img src = "./resources/css/images/ic-logo.svg">
             <p> <p id="Colmar"> COLMAR </p> <p id="Academy"> ACADEMY </p></p>
         </div>
+
         <div class = "links">
 
-          <a id = "OnCampus">
-            <div class = "text">
+          <a id = "OnCampus" href = "coming_soon.html">
+            <span class = "text">
               On Campus
-            </div>
-            <div class = "icon">
-            </div>
+            </span>
+            <span class = "icon">
+            </span>
           </a>
 
-          <a id = "Online">
-            <div class = "text">
+          <a id = "Online" href = "coming_soon.html">
+            <span class = "text">
               Online
-            </div>
-            <div class = "icon">
-            </div>
+            </span>
+            <span class = "icon">
+            </span>
           </a>
 
-          <a id = "ForCompanies" > For Companies </a>
+          <a id = "ForCompanies" href = "coming_soon.html">
+            <span class = "text">
+              For Companies
+            </span>
+          </a>
 
-          <a id = "SignIn">
-            <div class = "text">
+          <a id = "SignIn" href = "coming_soon.html">
+            <span class = "text">
               Sign In
-            </div>
-            <div class = "icon">
-            </div>
+            </span>
+            <span class = "icon">
+            </span>
           </a>
 
         </div>
+
+
       </div>
 
       <div id = "Spacer">
       </div>
 
       <div id = "MainPanel_1" class = "mainpanel">
-        <div id = "Banner" class = "large_panel">
+
+        <div id = "Banner" class = "large_panel_picture">
         </div>
+
         <div id = "LearnSomethingNew">
           <div id = "SpacerMobile">
           </div>
           <h1> Learn something <br /> new everyday </h1>
           <h3> Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. </h3>
-          <a id = "StartHere"> Start here </a>
+          <h3 id = "StartHere"> Start here </h3>
         </div>
       </div>
 
       <div id = "MainPanel_2" class = "mainpanel">
 
           <div class = "large_panel">
-            <div id = "InformationMain">
+            <div id = "InformationMain" class = "large_panel_picture">
             </div>
             <h2> It doesn't hurt to keep practicing </h2>
-            <p>
+            <p id = "Quote">
               "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque.
               Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
             </p>
@@ -81,30 +92,40 @@
             <div id = "Orientation" class = "small_panel">
               <div class = "small_image">
               </div>
-              <div>
+              <div class = "text">
                 <h3>Orientation date</h3>
-                <p>Tue 10/11 &amp Wed 10/12: 8am-3pm </p>
-                <a>Read more</a>
+                <p> <span> Tue 10/11 &amp Wed 10/12: 8am-3pm </span> <br /><br />
+                  <a href = "coming_soon.html" >
+                    Read more
+                  </a>
+                </p>
               </div>
             </div>
 
             <div id = "Campus" class = "small_panel">
               <div class = "small_image">
               </div>
-              <div >
+              <div class = "text">
                 <h3>Our campus</h3>
-                <p>Find which campus is close by you</p>
-                <a>Read more</a>
+                <p> <span> Find which campus is close by you </span> <br /><br />
+                  <a href = "coming_soon.html" >
+                    Read more
+                  </a>
+                </p>
               </div>
             </div>
+
 
             <div id = "GuestLecture" class = "small_panel">
               <div class = "small_image">
               </div>
-              <div>
+              <div class = "text">
                 <h3>Our guest lecture</h3>
-                <p>Join a keynote with Oliver Sack about music in medical treatment </p>
-                <a>Read more</a>
+                <p> <span> Join a keynote with Oliver Sack about music in medical treatment </span> <br /><br />
+                  <a href = "coming_soon.html" >
+                    Read more
+                  </a>
+                </p>
               </div>
             </div>
           </div>
@@ -117,122 +138,136 @@
         <div class = "medium_panels_container">
           <div class = "medium_panels">
 
-            <div class = "medium_panel">
+            <div class = "medium_panel color1">
               <div id = "Software" class = "picture">
               </div>
               <div class = "panel_text">
                 <h3>Software engineering</h3>
                 <p>
-                  COURSES <br />
+                  <span class = "courses"> COURSES </span> <br />
                   Web Development, Mobile <br />
                   Development, iOT, APIs
                 </p>
               </div>
+              <a class = "overlay" href = "coming_soon.html">
+              </a>
             </div>
 
-            <div class = "medium_panel">
+            <div class = "medium_panel color3">
               <div id = "ComputerArt" class = "picture">
               </div>
               <div class = "panel_text">
                 <h3>Computer art</h3>
                 <p>
-                  COURSES <br />
+                  <span class = "courses"> COURSES </span> <br />
                   Imaging &amp Design, Web Design, <br />
                   Motion Graphics &amp Visual Effects, <br />
                   Computer Animation
                 </p>
               </div>
+              <a class = "overlay" href = "coming_soon.html">
+              </a>
             </div>
 
-            <div class = "medium_panel">
+            <div class = "medium_panel color2">
               <div id = "Design" class = "picture">
               </div>
               <div class = "panel_text">
                 <h3>Design</h3>
                 <p>
-                  COURSES <br />
+                  <span class = "courses"> COURSES </span> <br />
                   User Expeience Design, User <br />
                   Research, Visual Design
                 </p>
               </div>
+              <a class = "overlay" href = "coming_soon.html">
+              </a>
             </div>
 
-            <div class = "medium_panel">
+            <div class = "medium_panel color3">
               <div id = "Data" class = "picture">
               </div>
               <div class = "panel_text">
                 <h3>Data</h3>
                 <p>
-                  COURSES <br />
+                  <span class = "courses"> COURSES </span> <br />
                   Data Science, Big Data, SQL, Data <br />
                   Visualization
                 </p>
               </div>
+              <a class = "overlay" href = "coming_soon.html">
+              </a>
             </div>
 
-            <div class = "medium_panel">
+            <div class = "medium_panel color2">
               <div id = "Business" class = "picture">
               </div>
               <div class = "panel_text">
                 <h3>Business</h3>
                 <p>
-                  COURSES <br />
+                  <span class = "courses"> COURSES </span> <br />
                   Product Development, Business <br />
                   Development, Startup
                 </p>
               </div>
+              <a class = "overlay" href = "coming_soon.html">
+              </a>
             </div>
 
-            <div class = "medium_panel">
+            <div class = "medium_panel color1">
               <div id = "Marketing" class = "picture">
               </div>
               <div class = "panel_text">
                 <h3>Marketing</h3>
                 <p>
-                  COURSES <br />
+                  <span class = "courses"> COURSES </span> <br />
                   Analytics, Content Marketing, <br />
                   Mobile Marketing
                 </p>
+              </div>
+              <div class = "overlay" href = "coming_soon.html">
               </div>
             </div>
           </div>
         </div>
       </div>
 
-        <div id = "ThesisExhibits">
-          <h2> Thesis exhibits </h2>
-          <div class = "mainpanel">
-            <div class = "large_panel">
+      <h2 id = "ThesisHeading"> Thesis Exhibits </h2>
+      <div id = "ThesisExhibits" >
+        <div class = "mainpanel">
+          <div class = "large_panel">
+            <div class = "large_panel_picture">
               <video controls>
                 <source src="./resources/css/videos/thesis.mp4" type="video/mp4">
               </video>
-              <h3>Reimagine urban</h3>
-              <p>
-                "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna.
-                Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
-              </p>
             </div>
+            <h3>Reimagine urban</h3>
+            <p>
+              "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna.
+              Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
+            </p>
+          </div>
 
-            <div class = "rightcolumn">
-              <div id = "Fisma" class = "small_panel">
-                <div class = "small_image">
-                </div>
-                <div class = "panel_text">
-                  <h3>Fisma: Design and</h3>
-                  <p>Designer showcase of new prototype product</p>
-                </div>
+          <div class = "rightcolumn">
+            <div id = "Fisma" class = "small_panel">
+              <div class = "small_image">
               </div>
-              <div id = "NowAndThen" class = "small_panel">
-                <div class = "small_image">
-                </div>
-                <div class = "panel_text">
-                  <h3>Now and then</h3>
-                  <p>Research study about New York</p>
-                </div>
+              <div class = "panel_text">
+                <h3>Fisma: Design and</h3>
+                <p>Designer showcase of new prototype product</p>
+              </div>
+            </div>
+            <div id = "NowAndThen" class = "small_panel">
+              <div class = "small_image">
+              </div>
+              <div class = "panel_text">
+                <h3>Now and then</h3>
+                <p>Research study about New York</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
   </div>
 
   <div class = "footer">
@@ -246,5 +281,7 @@
   </div>
 
   </body>
+
+  <a href="http://www.freepik.com">Background designed by Creative_hat / Freepik</a>
 
 </html>
