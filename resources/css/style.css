@@ -131,6 +131,13 @@ header div{
   margin-right: 8px;
 }
 
+header a div{
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .links a{
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
